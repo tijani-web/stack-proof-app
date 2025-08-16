@@ -1,0 +1,67 @@
+/* StackProof version - footer.css */
+.minimal-footer {
+  background: rgba(13, 13, 13, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 1.8rem 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid rgba(255, 204, 0, 0.1);
+}
+
+.footer-content {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.social-row {
+  display: flex;
+  gap: 1.8rem;
+}
+
+.social-icon {
+  color: #ffcc00;
+  font-size: 1.4rem;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.social-icon:hover {
+  color: #ffe066;
+  transform: translateY(-3px) scale(1.1);
+  filter: drop-shadow(0 2px 4px rgba(255, 204, 0, 0.3));
+}
+
+.divider {
+  width: 80%;
+  max-width: 300px;
+  height: 1px;
+  background: rgba(255, 204, 0, 0.15);
+}
+
+.copyright {
+  font-size: 0.8rem;
+  color: rgba(245, 245, 245, 0.7);
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .social-row {
+    gap: 1.5rem;
+  }
+  
+  .social-icon {
+    font-size: 1.3rem;
+  }
+  
+  .copyright {
+    font-size: 0.7rem;
+  }
+}

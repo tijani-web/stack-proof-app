@@ -1,0 +1,154 @@
+.about-page {
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f111a;
+  color: #f4f7fe;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.about-hero {
+  background: linear-gradient(to bottom, rgba(10,10,10,0.7), #0f111a),
+              url('../assets/images/Aboutbg1.jpeg') center/cover no-repeat;
+  padding: 140px 20px 100px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.hero-content p {
+  max-width: 620px;
+  margin: 0 auto 35px;
+  font-size: 1.15rem;
+  color: #cfd8f1;
+  line-height: 1.6;
+}
+
+.about-btn {
+  padding: 12px 32px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(to right, #61dafb, #3f83f8);
+  color: #0f111a;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease;
+}
+
+.about-btn:hover {
+  transform: scale(1.05);
+}
+
+.info-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px 20px 40px;
+}
+
+.card {
+  /* flex: 1 1 260px; */
+  width: 350px;
+  padding: 28px 50px;
+  border-radius: 16px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #d3d7f0;
+  line-height: 1.5;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.built-by {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 32px;
+  margin: 60px auto 100px;
+  max-width: 720px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #61dafb;
+}
+
+.built-by h4 {
+  margin: 0;
+  padding-bottom: 0.7rem;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.built-by p {
+  font-size: 0.95rem;
+  color: #cfd8f1;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .info-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .built-by {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-pic {
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width:370px) {
+  .card{
+    width: 280px;
+
+  }
+}
